@@ -271,5 +271,14 @@ python summ.py
 
 ## References
 
-Please cite the paper [Cross-Lingual Natural Language Generation via Pre-Training]() if you found the resources in the repository useful.
+Please cite the paper [Cross-Lingual Natural Language Generation via Pre-Training](https://arxiv.org/abs/1909.10481) if you found the resources in the repository useful.
+
+```
+@article{xnlg,
+  title={Cross-Lingual Natural Language Generation via Pre-Training},
+  author={Chi, Zewen and Dong, Li and Wei, Furu and Wang, Wenhui and Mao, Xian-Ling and Huang, Heyan},
+  journal={arXiv preprint arXiv:1909.10481},
+  year={2019}
+}
+```
 
