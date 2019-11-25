@@ -138,6 +138,8 @@ We use SQuAD 1.1 as the English QG dataset and WebQA as the Chinese QG dataset. 
 bash ./preprocess/get-data-xqg.sh
 ```
 
+or directly download at [here](https://drive.google.com/open?id=1kZJ0YyvW2vjCJv2vqEoemww2s5ECK7XJ).
+
 When decoding for QG, we use a decoding vocabulary, which can be downloaded at [here](https://drive.google.com/file/d/1jc7osl6XG7Cp3js5ui68idRlSYKzTwHT).
 
 #### Training for Zero-Shot QG
@@ -229,6 +231,8 @@ We use English/French/Chinese Gigaword () processed by extracting the first sent
 ```bash
 bash ./preprocess/get-data-xsumm.sh
 ```
+
+or directly download at [here](https://drive.google.com/open?id=1DP6pFPBTkGR1sopcZHY2V-3P8MNYpdsL).
 
 #### Training for Zero-Shot AS
 
