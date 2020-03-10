@@ -155,7 +155,6 @@ class MultiHeadAttention(nn.Module):
         self.layer_id = next(MultiHeadAttention.NEW_ID)
         self.dim = dim
         self.n_heads = n_heads
-        self.ms2s = (tf_cls != TransformerModel)
         self.dropout = dropout
         assert self.dim % self.n_heads == 0
 
@@ -164,7 +163,7 @@ class MultiHeadAttention(nn.Module):
         self.v_lin = Linear(dim, dim)
         self.out_lin = Linear(dim, dim)
 
-    def forward(self, input, mask, kv=None, cache=None, ms2s=False):
+    def forward(self, input, mask, kv=None, cache=None):
         """
         Self-attention (if kv is None) or attention over source sentence (provided by kv).
         """
@@ -198,27 +197,14 @@ class MultiHeadAttention(nn.Module):
             v = shape(self.v_lin(v))                                          # (bs, n_heads, qlen, dim_per_head)
 
         if cache is not None:
-            if self.ms2s:
-                if self.layer_id in cache:
-                    if kv is None:
-                        k_, v_ = cache[self.layer_id]
-                        k = torch.cat([k_, k], dim=2)                             # (bs, n_heads, klen, dim_per_head)
-                        # print(v_.size(2), v.size(2))
-                        v = torch.cat([v_, v], dim=2)                             # (bs, n_heads, klen, dim_per_head)
-                        cache[self.layer_id] = (k[:,:,:-1,:], v[:,:,:-1,:])
-                    else:
-                        k, v = cache[self.layer_id]
-                else: cache[self.layer_id] = (k[:,:,:-1,:], v[:,:,:-1,:])
-                torch.cuda.empty_cache()
-            else:
-                if self.layer_id in cache:
-                    if kv is None:
-                        k_, v_ = cache[self.layer_id]
-                        k = torch.cat([k_, k], dim=2)                             # (bs, n_heads, klen, dim_per_head)
-                        v = torch.cat([v_, v], dim=2)                             # (bs, n_heads, klen, dim_per_head)
-                    else:
-                        k, v = cache[self.layer_id]
-                cache[self.layer_id] = (k, v)
+            if self.layer_id in cache:
+                if kv is None:
+                    k_, v_ = cache[self.layer_id]
+                    k = torch.cat([k_, k], dim=2)                             # (bs, n_heads, klen, dim_per_head)
+                    v = torch.cat([v_, v], dim=2)                             # (bs, n_heads, klen, dim_per_head)
+                else:
+                    k, v = cache[self.layer_id]
+            cache[self.layer_id] = (k, v)
 
         q = q / math.sqrt(dim_per_head)                                       # (bs, n_heads, qlen, dim_per_head)
         scores = torch.matmul(q, k.transpose(2, 3))                           # (bs, n_heads, qlen, klen)
