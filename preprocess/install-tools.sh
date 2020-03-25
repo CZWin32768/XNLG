@@ -18,6 +18,9 @@ MOSES_DIR=$TOOLS_PATH/mosesdecoder
 FASTBPE_DIR=$TOOLS_PATH/fastBPE
 FASTBPE=$FASTBPE_DIR/fast
 WMT16_SCRIPTS=$TOOLS_PATH/wmt16-scripts
+STANFORD_SEGMENTER_VERSION=2018-10-16
+STANFORD_SEGMENTER_FILE=stanford-segmenter-$STANFORD_SEGMENTER_VERSION.zip
+STANFORD_SEGMENTER_LINK=https://nlp.stanford.edu/software/$STANFORD_SEGMENTER_FILE
 
 # tools path
 mkdir -p $TOOLS_PATH
@@ -62,8 +65,9 @@ fi
 
 # Chinese segmenter
 if ! ls $TOOLS_PATH/stanford-segmenter-* 1> /dev/null 2>&1; then
-  echo "Stanford segmenter not found at $TOOLS_PATH/stanford-segmenter-*"
-  echo "Please install Stanford segmenter in $TOOLS_PATH"
+  echo "Stanford segmenter downloading..."
+  wget $STANFORD_SEGMENTER_LINK -O /tmp/$STANFORD_SEGMENTER_FILE
+  unzip /tmp/$STANFORD_SEGMENTER_FILE -d  $TOOLS_PATH/
   exit 1
 fi
 
@@ -73,7 +77,7 @@ fi
 #   echo "Please install pythainlp (pip install pythainlp)"
 #   exit 1
 # fi
-# 
+#
 
 # Install gdown for downloading from google drive
 pip install gdown
