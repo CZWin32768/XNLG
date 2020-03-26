@@ -1,0 +1,6 @@
+
+fastBPE/
+mosesdecoder
+stanford-segmenter-*/
+wikiextractor
+wmt16-scripts
