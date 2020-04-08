@@ -9,13 +9,14 @@ This repo is based on [XLM](https://github.com/facebookresearch/XLM).
 ## Dependencies
 
 - numpy
-- nlgeval (for calculating BLEU scores)
+- [nlgeval](https://github.com/Maluuba/nlg-eval) (for calculating BLEU scores)
 - pytorch 1.1.0
 - fastBPE (generate and apply BPE cpdes)
 - Moses (for tokenization)
 - apex (for fp16 training)
 - tqdm
 - gdown (for downloading from Google Drive)
+- [pythainlp](https://github.com/PyThaiNLP/pythainlp) 2.0.6
 
 You can install some of the required tools through `bash ./preprocess/install-tools.sh`
 
