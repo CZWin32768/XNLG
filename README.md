@@ -47,7 +47,7 @@ E.g., `bash ./preprocess/get-data-wiki.sh en`.
 In the paper, we use MultiUN as the parallel corpus for en-zh and en-fr.
 You can get monolingual training data by `get-data-wiki.sh [lang1-lang2]`.
 
-E.g., `bash ./preprocess/get-data-wiki.sh en-fr`.
+E.g., `bash ./preprocess/get-data-para.sh en-fr`.
 
 #### Training
 
