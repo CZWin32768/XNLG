@@ -11,7 +11,7 @@ This repo is based on [XLM](https://github.com/facebookresearch/XLM).
 - numpy
 - [nlgeval](https://github.com/Maluuba/nlg-eval) (for calculating BLEU scores)
 - pytorch 1.1.0
-- fastBPE (generate and apply BPE cpdes)
+- fastBPE (generate and apply BPE codes)
 - Moses (for tokenization)
 - apex (for fp16 training)
 - tqdm
