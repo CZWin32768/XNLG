@@ -279,11 +279,21 @@ python summ.py
 Please cite the paper [Cross-Lingual Natural Language Generation via Pre-Training](https://arxiv.org/abs/1909.10481) if you found the resources in the repository useful.
 
 ```
-@article{xnlg,
-  title={Cross-Lingual Natural Language Generation via Pre-Training},
-  author={Chi, Zewen and Dong, Li and Wei, Furu and Wang, Wenhui and Mao, Xian-Ling and Huang, Heyan},
-  journal={arXiv preprint arXiv:1909.10481},
-  year={2019}
+@inproceedings{xnlg,
+  author    = {Zewen Chi and
+               Li Dong and
+               Furu Wei and
+               Wenhui Wang and
+               Xian{-}Ling Mao and
+               Heyan Huang},
+  title     = {Cross-Lingual Natural Language Generation via Pre-Training},
+  booktitle = {The Thirty-Fourth {AAAI} Conference on Artificial Intelligence, {AAAI}
+               2020, New York, NY, USA,
+               February 7-12, 2020},
+  pages     = {7570--7577},
+  publisher = {{AAAI} Press},
+  year      = {2020},
+  url       = {https://www.aaai.org/Papers/AAAI/2020GB/AAAI-ChiZ.7682.pdf}
 }
 ```
 
