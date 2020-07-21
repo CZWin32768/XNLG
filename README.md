@@ -280,16 +280,9 @@ Please cite the paper [Cross-Lingual Natural Language Generation via Pre-Trainin
 
 ```
 @inproceedings{xnlg,
-  author    = {Zewen Chi and
-               Li Dong and
-               Furu Wei and
-               Wenhui Wang and
-               Xian{-}Ling Mao and
-               Heyan Huang},
+  author    = {Chi, Zewen and Dong, Li and Wei, Furu and Wang, Wenhui and Mao, Xian{-}Ling and Huang, Heyan},
   title     = {Cross-Lingual Natural Language Generation via Pre-Training},
-  booktitle = {The Thirty-Fourth {AAAI} Conference on Artificial Intelligence, {AAAI}
-               2020, New York, NY, USA,
-               February 7-12, 2020},
+  booktitle = {The Thirty-Fourth {AAAI} Conference on Artificial Intelligence},
   pages     = {7570--7577},
   publisher = {{AAAI} Press},
   year      = {2020},
