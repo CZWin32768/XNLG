@@ -2,9 +2,14 @@
 
 Code and dataset for the paper [Cross-Lingual Natural Language Generation via Pre-Training](https://arxiv.org/pdf/1909.10481.pdf) (AAAI-20).
 
-With the pre-trained XNLG, the supervision signals of NLG can be transferred to other languages. For example, finetuning XNLG with English Abstractive Summarization (AS) data and directly performing French AS or even Chinese-French AS.
+## Cross-Lingual Pre-Trained Models
 
-This repo is based on [XLM](https://github.com/facebookresearch/XLM).
+- [**InfoXLM**](https://github.com/microsoft/unilm/tree/master/infoxlm) ([arXiv](https://arxiv.org/pdf/2007.07834.pdf)) InfoXLM: An Information-Theoretic Framework for Cross-Lingual Language Model Pre-Training.
+
+- [**XNLG**](https://github.com/CZWin32768/XNLG) ([arXiv](https://arxiv.org/pdf/1909.10481.pdf)) multilingual/cross-lingual pre-trained model for natural language generation, e.g., finetuning XNLG with English abstractive summarization (AS) data and directly performing French AS or even Chinese-French AS.
+
+## News
+- July 16, 2020:  [**InfoXLM**](https://github.com/microsoft/unilm/tree/master/infoxlm) [arXiv](https://arxiv.org/pdf/2007.07834.pdf)
 
 ## Dependencies
 
