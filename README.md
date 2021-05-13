@@ -4,12 +4,23 @@ Code and dataset for the paper [Cross-Lingual Natural Language Generation via Pr
 
 ## Cross-Lingual Pre-Trained Models
 
-- [**InfoXLM**](https://github.com/microsoft/unilm/tree/master/infoxlm) ([arXiv](https://arxiv.org/pdf/2007.07834.pdf)) InfoXLM: An Information-Theoretic Framework for Cross-Lingual Language Model Pre-Training.
+- **XLM-Align** (ACL 2021) Improving Pretrained Cross-Lingual Language Models via Self-Labeled Word Alignment
 
-- [**XNLG**](https://github.com/CZWin32768/XNLG) ([arXiv](https://arxiv.org/pdf/1909.10481.pdf)) multilingual/cross-lingual pre-trained model for natural language generation, e.g., finetuning XNLG with English abstractive summarization (AS) data and directly performing French AS or even Chinese-French AS.
+- **mT6** ([paper](https://arxiv.org/abs/2104.08692)) mT6: Multilingual Pretrained Text-to-Text Transformer with Translation Pairs
+
+- **InfoXLM** (NAACL 2021, [paper](https://arxiv.org/pdf/2007.07834.pdf), [repo](https://github.com/microsoft/unilm/tree/master/infoxlm)) InfoXLM: An Information-Theoretic Framework for Cross-Lingual Language Model Pre-Training.
+
+- **XNLG** (AAAI 2020, [paper](https://arxiv.org/pdf/1909.10481.pdf), [repo](https://github.com/CZWin32768/XNLG)) multilingual/cross-lingual pre-trained model for natural language generation, e.g., finetuning XNLG with English abstractive summarization (AS) data and directly performing French AS or even Chinese-French AS.
 
 ## News
-- July 16, 2020:  [**InfoXLM**](https://github.com/microsoft/unilm/tree/master/infoxlm) [arXiv](https://arxiv.org/pdf/2007.07834.pdf)
+
+- May 6, 2021: **XLM-Align** (InfoXLMv2) and xTune were accepted by ACL 2021.
+
+- April 18, 2021: **mT6** ([arXiv](https://arxiv.org/abs/2104.08692)).
+
+- March 11, 2021: [**InfoXLM**](https://github.com/microsoft/unilm/tree/master/infoxlm) was accepted by NAACL 2021.
+
+- July 16, 2020:  [**InfoXLM**](https://github.com/microsoft/unilm/tree/master/infoxlm) ([arXiv](https://arxiv.org/pdf/2007.07834.pdf)).
 
 ## Dependencies
 
