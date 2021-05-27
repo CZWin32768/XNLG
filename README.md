@@ -4,7 +4,7 @@ Code and dataset for the paper [Cross-Lingual Natural Language Generation via Pr
 
 ## Cross-Lingual Pre-Trained Models
 
-- **XLM-Align** (ACL 2021) Improving Pretrained Cross-Lingual Language Models via Self-Labeled Word Alignment
+- **XLM-Align** (ACL 2021, [repo](https://github.com/CZWin32768/XLM-Align)) Improving Pretrained Cross-Lingual Language Models via Self-Labeled Word Alignment
 
 - **mT6** ([paper](https://arxiv.org/abs/2104.08692)) mT6: Multilingual Pretrained Text-to-Text Transformer with Translation Pairs
 
